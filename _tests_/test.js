@@ -21,6 +21,13 @@ describe('SolarYears', () => {
     const myYears = new SolarYears(41,85);
     expect(myYears.onAnotherPlanetAge()).toEqual(3); 
 });
+
+test('should correctly return life expectancy on another planet', () => {
+  const myYears = new SolarYears(41,85);
+  expect(myYears.expectancyOnAnotherPlanet()).toEqual(354); 
+});
+
+
   
 
 
