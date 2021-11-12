@@ -6,9 +6,9 @@ export default class SolarYears {
     this.earthExpectancy = earthExpectancy;
   }
     
-    overExpectancy() {
+    /*overExpectancy() {
       let yearsOver = (this.earthExpectancy - this.earthYears);
       return yearsOver;
-  }
+  }*/
 
 }
