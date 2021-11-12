@@ -1,4 +1,4 @@
-import SolarYears from './../src/js/business.js';
+import SolarYears from './../src/business.js';
 
 describe('SolarYears', () => {
 
