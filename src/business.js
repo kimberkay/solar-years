@@ -19,7 +19,16 @@ export default class SolarYears {
     onAnotherPlanetAge() {
       let otherPlanetAge = Math.round(this.earthYears/this.jupiter);
       return otherPlanetAge;
-    }
+  }
+
+    expectancyOnAnotherPlanet() {
+      let otherPlanetExpectancy = Math.round(this.earthExpectancy/this.mercury);
+      return otherPlanetExpectancy;
+    }    
+
+  
+
+
 
     //  git add _tests_/test.js src/business.js
 //  git commit -m "add "
