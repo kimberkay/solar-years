@@ -5,6 +5,6 @@ export default class SolarYears {
     this.earthYears = earthYears;
     this.earthExpectancy = earthExpectancy;
   }
-
+    
 
 }
