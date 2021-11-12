@@ -4,6 +4,7 @@ export default class SolarYears {
   constructor(earthYears, earthExpectancy) {
     this.earthYears = earthYears;
     this.earthExpectancy = earthExpectancy;
+    this.mercury = .24;
   }
     
     yearsOver() {
@@ -14,6 +15,11 @@ export default class SolarYears {
     mercuryYears() {
       let mercuryAge = Math.round(this.earthYears/.24);
       return mercuryAge;
+    }
+
+    onAnotherPlanetAge() {
+      let otherPlanetAge = Math.round(this.earthYears/this.mercury);
+      return otherPlanetAge;
     }
 
 }
