@@ -5,6 +5,7 @@ export default class SolarYears {
     this.earthYears = earthYears;
     this.earthExpectancy = earthExpectancy;
     this.mercury = .24;
+    this.jupiter = 11.86;
   }
     
     yearsOver() {
@@ -18,8 +19,10 @@ export default class SolarYears {
     }
 
     onAnotherPlanetAge() {
-      let otherPlanetAge = Math.round(this.earthYears/this.mercury);
+      let otherPlanetAge = Math.round(this.earthYears/this.jupiter);
       return otherPlanetAge;
     }
+    //  git add _tests_/test.js src/business.js
+//  git commit -m "add "
 
 }

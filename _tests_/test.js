@@ -19,8 +19,10 @@ describe('SolarYears', () => {
 
   test('should correctly refactor mercuryYears to work for all planets', () => {
     const myYears = new SolarYears(41,85);
-    expect(myYears.onAnotherPlanetAge()).toEqual(171);
+    expect(myYears.onAnotherPlanetAge()).toEqual(3); 
 });
+  
+
 
 
 
