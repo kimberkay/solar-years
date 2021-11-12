@@ -25,6 +25,5 @@ describe('SolarYears', () => {
 
 
 
-//  git add _tests_/test.js src/business.js
-//  git commit -m "add "
+
 });
