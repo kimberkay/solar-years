@@ -4,11 +4,12 @@ export default class SolarYears {
   constructor(earthYears, earthExpectancy) {
     this.earthYears = earthYears;
     this.earthExpectancy = earthExpectancy;
+    this.overExpectancy = this.overExpectancy;
   }
     
-    /*overExpectancy() {
-      let yearsOver = (this.earthExpectancy - this.earthYears);
-      return yearsOver;
-  }*/
+    yearsOver() {
+      this.overExpectancy = (this.earthYears - earthExpectancy);
+      return this.overExpectancy;
+  }
 
 }
