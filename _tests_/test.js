@@ -26,6 +26,11 @@ test('should correctly return years left on other planets', () => {
   const myYears = new SolarYears(41,85);
   expect(myYears.yearsLeftOnOtherPlanet()).toEqual(183); 
 });
+
+test('should correctly return planet years over life expectancy', () => {
+  const elder = new SolarYears(92,85)
+  expect(elder.yearsOverOnOtherPlanet()).toBeCloseTo(29)
+});
   
 
 

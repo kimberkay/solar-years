@@ -31,6 +31,8 @@ export default class SolarYears {
       return yearsLeftOnPlanet;
     }
 
+    
+
   
 
 
