@@ -29,7 +29,7 @@ test('should correctly return years left on other planets', () => {
 
 test('should correctly return planet years over life expectancy', () => {
   const elder = new SolarYears(92,85)
-  expect(elder.yearsOverOnOtherPlanet()).toBeCloseTo(29)
+  expect(elder.yearsOverOnOtherPlanet()).toEqual(29)
 });
   
 

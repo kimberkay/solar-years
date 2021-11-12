@@ -24,14 +24,18 @@ export default class SolarYears {
     expectancyOnAnotherPlanet() {
       let otherPlanetExpectancy = Math.round(this.earthExpectancy/this.mercury);
       return otherPlanetExpectancy;
-    }    
+  }    
 
     yearsLeftOnOtherPlanet() {
       let yearsLeftOnPlanet = Math.round(this.expectancyOnAnotherPlanet()-this.onAnotherPlanetAge());
       return yearsLeftOnPlanet;
-    }
+  }
 
-    
+    yearsOverOnOtherPlanet() {
+      let elderYearsOver = Math.round(this.yearsOver()/this.mercury)
+      return elderYearsOver;
+  }
+
 
   
 
