@@ -9,7 +9,8 @@ describe('SolarYears', () => {
   });
   test('should correctly get the number of years a person is past their life expectancy', () => {
     const myYears = new SolarYears(41,85);
-    expect(overExpectancy).toEqual(yearsOver);
+    let yearsOver = 0
+    expect(yearsOver.overExpectancy).toEqual(44);
   });
 
 
