@@ -11,4 +11,9 @@ export default class SolarYears {
       return overExpectancy;
   }
 
+    mercuryYears() {
+      let mercuryAge = Math.round(this.earthYears/.24);
+      return mercuryAge;
+    }
+
 }
