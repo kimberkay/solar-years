@@ -17,7 +17,7 @@ export default class SolarYears {
   }
 
     onAnotherPlanetAge() {
-      let otherPlanetAge = Math.round(this.earthYears/this.jupiter);
+      let otherPlanetAge = Math.round(this.earthYears/this.mercury);
       return otherPlanetAge;
   }
 
@@ -25,6 +25,11 @@ export default class SolarYears {
       let otherPlanetExpectancy = Math.round(this.earthExpectancy/this.mercury);
       return otherPlanetExpectancy;
     }    
+
+    yearsLeftOnOtherPlanet() {
+      let yearsLeftOnPlanet = Math.round(this.expectancyOnAnotherPlanet()-this.onAnotherPlanetAge());
+      return yearsLeftOnPlanet;
+    }
 
   
 
