@@ -8,7 +8,7 @@ export default class SolarYears {
     this.jupiter = 11.86;
     this.venus = .62;
     this.mars = 1.88;
-    
+   
   }
     
     yearsOver() {
@@ -35,13 +35,5 @@ export default class SolarYears {
       let elderYearsOver = Math.round(this.yearsOver()/this.mercury)
       return elderYearsOver;
   }
-
-
-  
-
-
-
-    //  git add _tests_/test.js src/business.js
-//  git commit -m "add "
-
 }
+
