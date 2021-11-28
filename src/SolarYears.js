@@ -19,7 +19,7 @@ export default class SolarYears {
     }
 
     mercuryAge() {
-      this.age = Math.round(((this.earthYears/0.24) * 100)/100);
+      this.age = Math.round(((this.earthYears/this.mercury) * 100)/100);
       return this.age;
     }
 
@@ -36,6 +36,25 @@ export default class SolarYears {
       return `"You have ${(Math.abs(mercuryExpectancy))} years left. Go have more fun!"`
     }
   } 
+
+  marsAge() {
+    this.age = Math.round(((this.earthYears/this.mars) * 100)/100);
+    return this.age;
+  }
+
+  marsExpectancy() {
+    this.expectancy = Math.round(((this.earthExpectancy/this.mars)*100)/100);
+    return this.expectancy;
+}    
+
+  marsYearsLeftOrOver() {
+    let marsExpectancy = parseInt(Math.round((this.yearsOver()/this.mars * 100)/100));
+    if(marsExpectancy >= 0) {
+      return `"You are ${marsExpectancy} years over your expected years. Go have more fun!`;
+    } else if (marsExpectancy < 0) {
+    return `"You have ${(Math.abs(marsExpectancy))} years left. Go have more fun!"`
+  }
+} 
 
 }
 
