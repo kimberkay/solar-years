@@ -22,14 +22,16 @@ test('should correctly return expectancy in Mercury years', () => {
   expect(myYears.mercuryExpectancy()).toEqual(354);
 });
 
-/*test('should correctly return years left on other planets', () => {
+test('should correctly return years left or over on Mercury with message for each scenario', () => {
   const myYears = new SolarYears(41,85);
-  expect(myYears.yearsLeftOnOtherPlanet()).toEqual(183); 
+  expect(myYears.mercuryYearsLeftOrOver()).toEqual("\"You have 183 years left. Go have more fun!\"")
 });
 
-test('should correctly return planet years over life expectancy', () => {
-  const elder = new SolarYears(92,85)
-  expect(elder.yearsOverOnOtherPlanet()).toEqual(29)*/
+test('should correctly return years left or over on Mercury with message for each scenario', () => {
+  const olderYears = new SolarYears(87,85);
+  expect(olderYears.mercuryYearsLeftOrOver()).toEqual(`"You are 8 years over your expected years. Go have more fun!`)
+});
+
 });
 
 

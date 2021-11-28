@@ -28,14 +28,14 @@ export default class SolarYears {
       return this.expectancy;
   }    
 
-    /*yearsLeftOnMercury() {
-      let yearsLeft = Math.round(this.mercuryExpectancy()-this.mercuryAge());
-      return yearsLeft;
-  }
+    mercuryYearsLeftOrOver() {
+      let mercuryExpectancy = parseInt(Math.round((this.yearsOver()/this.mercury * 100)/100));
+      if(mercuryExpectancy >= 0) {
+        return `"You are ${mercuryExpectancy} years over your expected years. Go have more fun!`;
+      } else if (mercuryExpectancy < 0) {
+      return `"You have ${(Math.abs(mercuryExpectancy))} years left. Go have more fun!"`
+    }
+  } 
 
-    yearsOverMercury() {
-      let yearsOver = Math.round(this.yearsOver()/this.mercury)
-      return yearsOver;
-  }*/
 }
 
