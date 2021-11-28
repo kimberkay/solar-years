@@ -23,12 +23,12 @@ export default class SolarYears {
       return this.age;
     }
 
-    /*mercuryExpectancy() {
-      this.expectancy = Math.round(this.earthExpectancy/this.mercury);
+    mercuryExpectancy() {
+      this.expectancy = Math.round(((this.earthExpectancy/this.mercury)*100)/100);
       return this.expectancy;
   }    
 
-    yearsLeftOnMercury() {
+    /*yearsLeftOnMercury() {
       let yearsLeft = Math.round(this.mercuryExpectancy()-this.mercuryAge());
       return yearsLeft;
   }

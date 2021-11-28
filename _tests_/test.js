@@ -17,12 +17,12 @@ describe('SolarYears', () => {
     expect(myYears.mercuryAge()).toEqual(171);
 });
 
-/*test('should correctly return life expectancy on Mercury', () => {
+test('should correctly return expectancy in Mercury years', () => {
   const myYears = new SolarYears(41,85);
-  expect(myYears.mercuryExpectancy()).toEqual(354); 
+  expect(myYears.mercuryExpectancy()).toEqual(354);
 });
 
-test('should correctly return years left on other planets', () => {
+/*test('should correctly return years left on other planets', () => {
   const myYears = new SolarYears(41,85);
   expect(myYears.yearsLeftOnOtherPlanet()).toEqual(183); 
 });
