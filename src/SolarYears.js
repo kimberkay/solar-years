@@ -39,7 +39,7 @@ export default class SolarYears {
 
     marsAge() {
      this.age = Math.round(((this.earthYears/this.mars) * 100)/100);
-     return this.age;
+      return this.age;
     }
 
     marsExpectancy() {
@@ -62,7 +62,7 @@ export default class SolarYears {
     }
 
     jupiterExpectancy() {
-     this.expectancy = Math.round(((this.earthExpectancy/this.jupiter)*100)/100);
+      this.expectancy = Math.round(((this.earthExpectancy/this.jupiter)*100)/100);
       return this.expectancy;
     }     
 
@@ -74,7 +74,6 @@ export default class SolarYears {
         return `"You have ${(Math.abs(jupiterExpectancy))} years left. Go have more fun!"`
       }
     } 
-
 
     venusAge() {
       this.age = Math.round(((this.earthYears/this.venus) * 100)/100);
