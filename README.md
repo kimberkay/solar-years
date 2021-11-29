@@ -31,8 +31,9 @@ _A simple web application that let's a user find their age and life expectancy o
 * _Open the terminal on your desktop_
 * _Once in the terminal, use it to navigate to your desktop folder_
 * _Once inside your desktop folder, use the command "git clone https://github.com/kimberkay/solar-years"_
-* _Inside the directory "solar-years", run npm install then, run npm run build.
+* _Inside the directory "solar-years", run npm install then, run $ npm run build._
 * _Open the project with the code editor of your choice_
+* _To run tests, open _tests_/test.js, ensure test.js is importing from src/SolarYears.js. Set up test in test.js and run $ npm run test ._
 
 
 
